@@ -1,11 +1,74 @@
 @import 'fonts';
 @import 'global';
 
+// start header 
 
+.header {
+  padding-top: 60px;
+  &__search {
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+  }
+  &__search-input {
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    border: none;
+    border-bottom: 1px solid #222;
+    outline: none;
+  }
+  &__search-btn {
+    outline: none;
+    position: absolute; 
+    top: 0;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    &::before {
+      content: "";
+      background-image: url(../images/search-ico.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 20px;
+      height: 18px;
+      display: block;
+    }
+  }
+}
 
+.logo {
+  display: block;
+  max-width: 75px;
+  &__img {
+    display: block;
+    width: 100%;
+  }
+}
 
+.menu {
+  
+  &__line {
+    display: block;
+    margin-left: auto;
+    margin-top: 5px;
+    width: 34px;
+    height: 3px;
+    background-color: #222;
+    &--1 {
+      width: 34px;
+    }
+    &--2 {
+      width: 18px;
+    }
+  }
+}
 
-
+// end header 
 
 
 @import 'media';
