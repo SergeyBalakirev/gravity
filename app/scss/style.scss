@@ -6,17 +6,28 @@
 .header {
   padding-top: 60px;
   &__search {
+    background-color: #E5E5E5;
     position: relative;
-    width: 200px;
+    width: 0px;
     margin: 0 auto;
+    transition: all .5s;
+    &:hover {
+      width: 200px;
+    }
+    &:active {
+      width: 200px;
+    }
+    &:hover .header__search-input{
+      border-bottom: 1px solid #222;
+    }
   }
   &__search-input {
     width: 100%;
     height: 30px;
     padding: 0 10px;
     border: none;
-    border-bottom: 1px solid #222;
     outline: none;
+    background-color: #E5E5E5;
   }
   &__search-btn {
     outline: none;
@@ -26,7 +37,7 @@
     width: 30px;
     height: 30px;
     border: none;
-    background-color: #fff;
+    background-color: #E5E5E5;
     cursor: pointer;
     &::before {
       content: "";
@@ -51,10 +62,16 @@
 }
 
 .menu {
-  
-  &__line {
+  &__burger {
     display: block;
+    width: 34px;
+    height: 34px;
     margin-left: auto;
+    cursor: pointer;
+  }
+  &__line {
+    margin-left: auto;
+    display: block;
     margin-top: 5px;
     width: 34px;
     height: 3px;
@@ -66,9 +83,187 @@
       width: 18px;
     }
   }
+
+  &__list {
+    padding: 30px 0;
+    
+  }
+  &__item {
+    margin: 0 15px;
+  }
+  &__link {
+    text-decoration: none;
+    color: #222;
+  }
 }
 
+
 // end header 
+
+// start home 
+.home {
+  margin-top: 30px;
+  margin-left: 215px;
+  margin-bottom: 130px;
+  &__content {
+    max-width: 475px;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1px;
+    color: #151515;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.7;
+    margin-bottom: 50px;
+  }
+  &__btn {
+    cursor: pointer;
+    background-color: #4737FF;
+    width: 190px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    transition: all .5s;
+    &:hover {
+      background-color: #fff;
+      color: #222;
+    }
+  }
+  &__img {
+    background-image: url(../images/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // max-width: 665px;
+    width: 100%;
+    height: 840px;
+  }
+}
+
+// end home 
+
+
+// start about 
+.about {
+  margin-bottom: 131px;
+  &__img {
+    background-image: url(../images/about-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 475px;
+    height: 564px;
+  }
+  &__content {
+    margin-left: 90px;
+  }
+  &__title {
+    max-width: 540px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+  &__user {
+    display: flex;
+    margin-top: 60px;
+  }
+  &__user-avatar {
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    overflow: hidden;
+  }
+  &__user-descr {
+    margin-left: 30px;
+  }
+  &__user-name {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: #222222;
+    text-decoration: none;
+  }
+  &__user-prof {
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.7;
+  }
+}
+
+
+// end about 
+
+
+// start services 
+
+.services {
+  &__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -1px;
+  }
+  &__name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 40px;
+  }
+  &__img {
+    background-image: url(../images/services-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 920px;
+    width: 100%;
+    height: 558px;
+    margin: 0 auto;
+    margin-top: 130px;
+  }
+  &__list {
+    margin-top: 68px;
+    margin-left: 100px;
+  }
+  &__item {
+    margin-bottom: 20px;
+  }
+  &__link {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 28px;
+    color: #222222;
+    opacity: 0.5;
+  }
+}
+
+// end services 
+
+
 
 
 @import 'media';

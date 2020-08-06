@@ -9,6 +9,7 @@
   "author": "Sergey",
   "license": "ISC",
   "devDependencies": {
+    "bootstrap": "^4.5.1",
     "cssmin": "^0.4.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",

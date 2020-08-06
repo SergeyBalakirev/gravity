@@ -8,10 +8,25 @@ html {
   box-sizing: inherit;
 }
 
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
 body {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   color: #222222;
+  background-color: #E5E5E5;
 }
