@@ -14,7 +14,7 @@
     &:hover {
       width: 200px;
     }
-    &:active {
+    &:focus {
       width: 200px;
     }
     &:hover .header__search-input{
@@ -86,7 +86,13 @@
 
   &__list {
     padding: 30px 0;
-    
+    display: none;
+  }
+  &__list-inner {
+    display: flex;
+  }
+  &__list-active {
+    display: flex;
   }
   &__item {
     margin: 0 15px;
@@ -103,8 +109,9 @@
 // start home 
 .home {
   margin-top: 30px;
-  margin-left: 215px;
+  // margin-left: 215px;
   margin-bottom: 130px;
+  // overflow: hidden;
   &__content {
     max-width: 475px;
   }
@@ -297,8 +304,11 @@
     margin-top: 30px;
     transition: all .3s;
     &:hover {
-      margin-top: -20px;
+      margin-top: -10px;
     }
+  }
+  &__tabs-img {
+    width: 100%;
   }
   &__text {
     font-size: 18px;
@@ -370,15 +380,14 @@
   &__items {
     margin-top: 70px;
   }
-  &__item {
-    text-align: center;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__link {
+    display: block;
     opacity: 0.15;
-    // &:first-child {
-    //   text-align: left;
-    // }
-    // &:last-child {
-    //   text-align: right;
-    // }
     transition: all .5s;
     &:hover {
       opacity: 1;
